@@ -1,0 +1,10 @@
+.carousel-container {
+    max-width: 100%; /* Ajusta el tamaño máximo del carrusel */
+    max-height: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel-image {
+    height: 650px; 
+    object-fit: cover; 
+  }
