@@ -1,42 +1,65 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 .header-container {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: absolute;
-    z-index: 100;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-item {
-    height: 145px;
-  }
-  
-  .nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    font-family: "Lora", serif;
-    margin-left: 1.3rem;
-    font-size: 1.36rem;
-    padding: 1.1rem;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .nav-item:hover {
-    text-decoration: underline;
-  }
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  z-index: 100;
+  background: transparent;
+  transition: background-color .3s ease-in-out, height .3s ease-in-out, padding .3s ease-in-out;
+}
+
+.header-container.fixed {
+  background-color: #0c0c22;
+  height: 92px; /* Cambia la altura cuando se hace scroll */
+  padding: 0.5rem 2rem; /* Cambia el padding cuando se hace scroll */
+  background: rgba(12, 12, 34, 0.976); /* Fondo ligeramente transparente */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-item {
+  height: 145px;
+  transition: height .3s ease-in-out;
+}
+
+.header-container.fixed .logo-item {
+  height: 79px; /* Cambia la altura del logo cuando se hace scroll */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  font-family: "Lora", serif;
+  margin-left: 1.3rem;
+  font-size: 1.36rem;
+  padding: 1.1rem;
+  cursor: pointer;
+  color: white;
+  transition: padding .3s ease-in-out;
+}
+
+.header-container.fixed .nav-item {
+  padding: 0.5rem; /* Cambia el padding de los items del nav cuando se hace scroll */
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+

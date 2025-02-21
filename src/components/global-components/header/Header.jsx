@@ -1,19 +1,40 @@
+import { useState, useEffect } from "react";
 import "./Header.css";
 
 function Header() {
+  const [fix, setFix] = useState(false);
+
+  useEffect(() => {
+    function setFixed() {
+      if (window.scrollY >= 190) {
+        setFix(true);
+      } else {
+        setFix(false);
+      }
+    }
+
+    window.addEventListener("scroll", setFixed);
+
+    return () => {
+      window.removeEventListener("scroll", setFixed);
+    };
+  }, []);
+
   return (
-    <header className="header-container">
-      <div className="logo-container">
-        <img src="./logo/white-logo.png" alt="logo" className="logo-item"/>
-      </div>
-      <ul className="nav-list">
-        <li className="nav-item">Home</li>
-        <li className="nav-item">Reservas</li>
-        <li className="nav-item">Destinos</li>
-        <li className="nav-item">Contacto</li>
-        <li className="nav-item">Iniciar Sesión</li>
-      </ul>
-    </header>
+    <>
+      <header className={fix ? 'header-container fixed' : 'header-container'}>
+        <div className="logo-container">
+          <img src="./logo/white-logo.png" alt="logo" className="logo-item"/>
+        </div>
+        <ul className="nav-list">
+          <li className="nav-item"><a href="/home">Home</a></li>
+          <li className="nav-item"><a href="/home">Reservas</a></li>
+          <li className="nav-item"><a href="/home">Destinos</a></li>
+          <li className="nav-item"><a href="/home">Contacto</a></li>
+          <li className="nav-item"><a href="/home">Inicia Sesión</a></li>
+        </ul>
+      </header>
+    </>
   );
 }
 

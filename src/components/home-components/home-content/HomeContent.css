@@ -1,0 +1,13 @@
+.home-content-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #1a1a33;
+  padding: 60px 60px 60px 60px;
+  gap: 50px;
+}
+
+.card-item {
+  border: 10px solid red;
+}

@@ -4,6 +4,7 @@ import Footer from "../../components/global-components/footer/Footer";
 import HomeImage from "../../components/home-components/home-image/homeImage";
 import "./Home.css";
 import CarouselComponent from "../../components/home-components/carousel-component/CarouselComponent";
+import HomeContent from "../../components/home-components/home-content/HomeContent";
 
 
 function Home (){
@@ -12,12 +13,9 @@ function Home (){
          <Header/>
          <HomeImage/>
          <CarouselComponent/>
+         <HomeContent/>
          <Footer/>
         </>
-       
-   
-        
-
     )
 }
 

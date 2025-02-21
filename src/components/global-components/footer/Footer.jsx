@@ -5,8 +5,8 @@ import { faInstagram, faFacebook, faTwitter, faGithub } from '@fortawesome/free-
 
 function Footer() {
 
-    return (
-        <footer className="footer-container">
+  return (
+    <footer className="footer-container">
       <span className="footer-title">JeredAirlines</span>
       <ul className="social-media-icons">
         <li>
@@ -19,7 +19,7 @@ function Footer() {
           <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>
         </li>
         <li>
-          <a href="#"><FontAwesomeIcon icon={faGithub} /></a>
+          <a href="https://github.com/jonathanelruso/ENTREGA-1-REACT---JEREDAIRLINES"><FontAwesomeIcon icon={faGithub} /></a>
         </li>
       </ul>
       <div className="info-container">
@@ -54,7 +54,7 @@ function Footer() {
       </div>
       <p>&copy; JeredAirlines 2025</p>
     </footer>
-    )
+  )
 }
 
 export default Footer;
