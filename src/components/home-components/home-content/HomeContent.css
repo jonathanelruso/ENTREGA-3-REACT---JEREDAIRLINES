@@ -11,3 +11,10 @@
 .card-item {
   border: 10px solid red;
 }
+
+.content-title {
+  color: white;
+  font-size: 2.34rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

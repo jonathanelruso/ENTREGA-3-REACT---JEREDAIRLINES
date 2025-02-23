@@ -16,7 +16,7 @@
   background-color: #0c0c22;
   height: 92px; /* Cambia la altura cuando se hace scroll */
   padding: 0.5rem 2rem; /* Cambia el padding cuando se hace scroll */
-  background: rgba(12, 12, 34, 0.976); /* Fondo ligeramente transparente */
+  background: rgba(12, 12, 34, 0.976);
 }
 
 .logo-container {
@@ -51,7 +51,7 @@
 }
 
 .header-container.fixed .nav-item {
-  padding: 0.5rem; /* Cambia el padding de los items del nav cuando se hace scroll */
+  padding: 0.5rem; 
 }
 
 .nav-item a {
