@@ -4,12 +4,12 @@
   justify-content: space-around;
   align-items: flex-end;
   background-color: #1a1a33;
-  padding: 60px 60px 60px 60px;
+  padding: 60px 60px 0 60px;
   gap: 50px;
 }
 
 .card-item {
-  border: 10px solid red;
+  border: 10px solid green;
 }
 
 .content-title {
@@ -17,4 +17,17 @@
   font-size: 2.34rem;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 38px;
+}
+
+.button-title {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0px;
+  text-align: center;
 }

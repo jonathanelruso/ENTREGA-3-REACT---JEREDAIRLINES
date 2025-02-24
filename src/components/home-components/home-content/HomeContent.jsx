@@ -3,10 +3,13 @@ import "./HomeContent.css";
 
 
 function HomeContent() {
-    return (
+  return (
+    <div>
       <HomeCards />
-    )
-    
+    </div>
+
+  )
+
 }
 
 

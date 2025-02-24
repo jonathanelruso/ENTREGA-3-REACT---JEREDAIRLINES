@@ -24,14 +24,14 @@ function Header() {
     <>
       <header className={fix ? 'header-container fixed' : 'header-container'}>
         <div className="logo-container">
-          <img src="./logo/white-logo.png" alt="logo" className="logo-item"/>
+          <img src="./logo/white-logo.png" alt="logo" className="logo-item" loading="lazy"/>
         </div>
         <ul className="nav-list">
           <li className="nav-item"><a href="/home">Home</a></li>
           <li className="nav-item"><a href="/home">Reservas</a></li>
           <li className="nav-item"><a href="/home">Destinos</a></li>
           <li className="nav-item"><a href="/home">Contacto</a></li>
-          <li className="nav-item"><a href="/home">Inicia Sesión</a></li>
+          <li className="nav-item"><a href="/home">Iniciar Sesión</a></li>
         </ul>
       </header>
     </>
