@@ -1,65 +1,285 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-.header-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: fixed;
-  z-index: 100;
-  background: transparent;
-  transition: background-color .3s ease-in-out, height .3s ease-in-out, padding .3s ease-in-out;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  /* Estilo cuando el header se fija al hacer scroll */
+  .header-container.fixed {
+    background-color: rgba(12, 12, 34, 0.99);
+    padding: 0.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-item {
+    height: 95px;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .header-container.fixed .logo-item {
+    height: 60px;
+  }
+
+  .offcanvas-menu .offcanvas-body {
+    background-color: #171a4a;
+  }
+  
+  .offcanvas-menu .offcanvas-header {
+    background-color: #0f1233; 
+    color: #fff; 
+  }
+
+  .offcanvas-menu .btn-close {
+    filter: invert(100%);
+  }
+
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-list-mobile {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-list-mobile .nav-item {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+
+  .nav-list-mobile .nav-item a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
-.header-container.fixed {
-  background-color: #0c0c22;
-  height: 92px; /* Cambia la altura cuando se hace scroll */
-  padding: 0.5rem 2rem; /* Cambia el padding cuando se hace scroll */
-  background: rgba(12, 12, 34, 0.99);
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  /* Estilo cuando el header se fija al hacer scroll */
+  .header-container.fixed {
+    background-color: rgba(12, 12, 34, 0.99);
+    padding: 0.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-item {
+    height: 120px; /* Ajustar el logo */
+    transition: height 0.3s ease-in-out;
+  }
+
+  .header-container.fixed .logo-item {
+    height: 75px;
+  }
+
+  .offcanvas-menu .offcanvas-body {
+    background-color: #171a4a;
+  }
+  
+  .offcanvas-menu .offcanvas-header {
+    background-color: #0f1233; 
+    color: #fff; 
+  }
+
+  .offcanvas-menu .btn-close {
+    filter: invert(100%);
+  }
+
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-list-mobile {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-list-mobile .nav-item {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+
+  .nav-list-mobile .nav-item a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+
+  /* Estilo cuando el header se fija al hacer scroll */
+  .header-container.fixed {
+    background-color: rgba(12, 12, 34, 0.99);
+    padding: 0.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-item {
+    height: 125px; /* Ajustar tamaño del logo */
+    transition: height 0.3s ease-in-out;
+  }
+
+  .header-container.fixed .logo-item {
+    height: 70px;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    font-family: "Lora", serif;
+    margin-left: 1.3rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: padding 0.3s ease-in-out;
+  }
+
+  .header-container.fixed .nav-item {
+    padding: 0.5rem;
+  }
+
+  .nav-item a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nav-item:hover {
+    text-decoration: underline;
+  }
 }
 
-.logo-item {
-  height: 145px;
-  transition: height .3s ease-in-out;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+
+  .header-container.fixed {
+    background-color: rgba(12, 12, 34, 0.99);
+    padding: 0.5rem;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-item {
+    height: 145px;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .header-container.fixed .logo-item {
+    height: 79px;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    font-family: "Lora", serif;
+    margin-left: 1.3rem;
+    font-size: 1.36rem;
+    padding: 1.1rem;
+    cursor: pointer;
+    color: white;
+    transition: padding 0.3s ease-in-out;
+  }
+
+  .header-container.fixed .nav-item {
+    padding: 0.5rem;
+  }
+
+  .nav-item a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .nav-item:hover {
+    text-decoration: underline;
+  }
 }
 
-.header-container.fixed .logo-item {
-  height: 79px; /* Cambia la altura del logo cuando se hace scroll */
-}
 
-.nav-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 
-.nav-item {
-  font-family: "Lora", serif;
-  margin-left: 1.3rem;
-  font-size: 1.36rem;
-  padding: 1.1rem;
-  cursor: pointer;
-  color: white;
-  transition: padding .3s ease-in-out;
-}
 
-.header-container.fixed .nav-item {
-  padding: 0.5rem; 
-}
-
-.nav-item a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-}
 
