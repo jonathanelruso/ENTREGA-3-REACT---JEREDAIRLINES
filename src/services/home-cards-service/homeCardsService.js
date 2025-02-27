@@ -28,6 +28,5 @@ export const cards = [
         image: "/home-card-images/card-6.webp",
         title: "Seúl",
         subtitle: "Corea del Sur"
-
     }
 ]

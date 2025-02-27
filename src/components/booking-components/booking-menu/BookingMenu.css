@@ -1,0 +1,7 @@
+.booking-menu-container {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    gap: 70px;
+}

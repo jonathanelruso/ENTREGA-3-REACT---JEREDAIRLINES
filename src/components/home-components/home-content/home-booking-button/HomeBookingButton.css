@@ -9,6 +9,9 @@
   width: 100%;
 }
 
+.blob-btn-link {
+  text-decoration: none;
+}
 .blob-btn {
   z-index: 1;
   position: absolute;

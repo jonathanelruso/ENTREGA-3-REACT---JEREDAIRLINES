@@ -101,7 +101,7 @@
   }
 
   .logo-item {
-    height: 120px; /* Ajustar el logo */
+    height: 120px;
     transition: height 0.3s ease-in-out;
   }
 

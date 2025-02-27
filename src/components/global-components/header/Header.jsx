@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button, Offcanvas } from "react-bootstrap";
 import "./Header.css";
 
-function Header() {
+function Header({logo_image}) {
   const [fix, setFix] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -33,7 +33,7 @@ function Header() {
     <>
       <header className={fix ? "header-container fixed" : "header-container"}>
         <div className="logo-container">
-          <img src="./logo/white-logo.webp" alt="logo" className="logo-item" loading="lazy" />
+          <img src={logo_image} alt="logo" className="logo-item" loading="lazy" />
         </div>
 
         {/*Si es móvil, muestra el botón de menú */}
@@ -44,7 +44,7 @@ function Header() {
         ) : (
           <ul className="nav-list">
             <li className="nav-item"><a href="/home">Home</a></li>
-            <li className="nav-item"><a href="/reservas">Reservas</a></li>
+            <li className="nav-item"><a href="/booking">Booking</a></li>
             <li className="nav-item"><a href="/destinos">Destinos</a></li>
             <li className="nav-item"><a href="/contacto">Contacto</a></li>
             <li className="nav-item"><a href="/login">Iniciar Sesión</a></li>
@@ -52,7 +52,7 @@ function Header() {
         )}
       </header>
 
-      {/*Menú Offcanvas para móviles */}
+      {/*Menu Offcanvas para moviles */}
       <Offcanvas show={showMenu} onHide={() => setShowMenu(false)} placement="end" className="offcanvas-menu">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Menú</Offcanvas.Title>
