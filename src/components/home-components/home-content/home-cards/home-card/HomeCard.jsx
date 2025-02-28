@@ -7,7 +7,7 @@ import "../../HomeContent.css";
 
 function HomeCard(props) {
     return (
-        <Card className="card-item" sx={{ minHeight: '240px', width: 400 }}>
+        <Card className="card-item">
             <CardCover>
                 <img
                     src={props.image}

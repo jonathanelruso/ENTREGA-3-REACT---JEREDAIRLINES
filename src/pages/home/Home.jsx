@@ -4,7 +4,7 @@ import Footer from "../../components/global-components/footer/Footer";
 import CarouselComponent from "../../components/home-components/carousel-component/CarouselComponent";
 import HomeContent from "../../components/home-components/home-content/HomeContent";
 import "./Home.css";
-import HomeImage from "../../components/global-components/home-image/HomeImage";
+import HomeImage from "../../components/global-components/background-image/HomeImage";
 
 
 

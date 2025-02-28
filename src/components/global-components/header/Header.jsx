@@ -43,8 +43,8 @@ function Header({logo_image}) {
           </Button>
         ) : (
           <ul className="nav-list">
-            <li className="nav-item"><a href="/home">Home</a></li>
-            <li className="nav-item"><a href="/booking">Booking</a></li>
+            <li className="nav-item"><a href="/home">Inicio</a></li>
+            <li className="nav-item"><a href="/booking">Reservas</a></li>
             <li className="nav-item"><a href="/destinos">Destinos</a></li>
             <li className="nav-item"><a href="/contacto">Contacto</a></li>
             <li className="nav-item"><a href="/login">Iniciar Sesión</a></li>
@@ -59,7 +59,7 @@ function Header({logo_image}) {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="nav-list-mobile">
-            <li className="nav-item"><a href="/home">Home</a></li>
+            <li className="nav-item"><a href="/home">Inicio</a></li>
             <li className="nav-item"><a href="/booking">Reservas</a></li>
             <li className="nav-item"><a href="/destinos">Destinos</a></li>
             <li className="nav-item"><a href="/contacto">Contacto</a></li>

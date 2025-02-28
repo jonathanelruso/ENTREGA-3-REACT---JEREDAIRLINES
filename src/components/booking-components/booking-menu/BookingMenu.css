@@ -1,7 +1,24 @@
 .booking-menu-container {
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-image:  url("background-image/booking-menu-image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    height: 450px;
+}
+
+.booking-options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: solid 3px #171a4a;
+    border-radius: 10px;
+    background-color: white;
+    height: 200px; 
     padding: 0 20px;
-    height: 50px;
-    gap: 70px;
+    gap: 60px;  
 }

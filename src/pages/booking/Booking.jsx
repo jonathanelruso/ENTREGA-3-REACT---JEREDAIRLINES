@@ -1,7 +1,7 @@
 import BookingMenu from "../../components/booking-components/booking-menu/BookingMenu";
 import Footer from "../../components/global-components/footer/Footer";
 import Header from "../../components/global-components/header/Header";
-import HomeImage from "../../components/global-components/home-image/HomeImage";
+import HomeImage from "../../components/global-components/background-image/HomeImage";
 import "../home/Home.css";
 
 function Booking() {
