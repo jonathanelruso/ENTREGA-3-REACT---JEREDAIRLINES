@@ -7,7 +7,7 @@ function Destinations () {
     return (
         <>
         <Header logo_image={"./logo/white-logo.png"}/>
-        <BackgroundImage image= "/background-image/destinations-image.webp" text={"hola"}/>
+        <BackgroundImage image= "/background-image/destinations-image.webp" text={"Lugares inolvidables te esperan"}/>
         <DestinationCards/>
         <Footer/>
         </>

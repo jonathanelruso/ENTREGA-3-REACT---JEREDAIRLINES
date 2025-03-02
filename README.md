@@ -10,4 +10,25 @@ This project is a web application for Jered Airlines, developed using React and 
 - **Material-UI**: UI component library for React.
 - **FontAwesome**: Vector icons and social logos library.
 
-Sticky Navbar on the scroll: https://www.youtube.com/watch?v=HoyHhgMYFj4
+
+## Getting started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/jonathanelruso/ENTREGA-1-REACT---JEREDAIRLINES.git
+
+2. Navigate to the project directory
+    ```bash
+    cd ENTREGA-1-REACT---JEREDAIRLINES
+
+3. Install the dependencies
+     ```bash
+     npm install
+
+4. Start the development server
+    ```bash
+    npm run dev
+
+## Adicional resources / Acknowledgements
+
+- Sticky Navbar on the scroll: [YouTube Video](https://www.youtube.com/watch?v=HoyHhgMYFj4)
