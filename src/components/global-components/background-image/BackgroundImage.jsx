@@ -1,6 +1,6 @@
-import "./homeImage.css";
+import "./BackgroundImage.css";
 
-function HomeImage({image, text}) {
+function BackgroundImage({image, text}) {
     return(
         <div className="home-image-container">
             <img src={image} alt="homeImage" className="home-image-item" loading="lazy"/>
@@ -11,4 +11,4 @@ function HomeImage({image, text}) {
     )
 }
 
-export default HomeImage;
+export default BackgroundImage;

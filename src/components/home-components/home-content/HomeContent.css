@@ -1,56 +1,131 @@
+/*Estilos generales */
+.home-content-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1a1a33;
+  gap: 20px;
+}
+
+.content-title {
+  color: white;
+  text-align: center;
+}
+
+.button-title {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .home-content-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #2a2a4d;
+    justify-content: space-evenly;
     padding: 20px;
-    gap: 20px;
+    gap: 30px;
   }
 
   .card-item {
-    border: 2px solid green;
-    height: 200px;
-    width: 180px
+    height: 190px;
+    width: 40%;
+    min-width: 150px;
   }
 
   .content-title {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-align: center;
+    font-size: 1.3rem;
     margin-top: 12px;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
   }
-
-  .button-container {
-    padding-bottom: 10px;
-  }
-
+  
   .button-title {
-    margin-top: 22px;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .home-content-container {
+    display: flex;
+    justify-content: space-evenly;
     padding: 30px;
-    gap: 25px;
+    gap: 30px;
   }
 
   .card-item {
-    border-width: 3px;
-    width: 90%;
+    height: 220px;
+    width: 45%;
   }
 
   .content-title {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+
+  .button-title {
+    font-size: 1.3rem;
+    margin-top: 19px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home-content-container {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .card-item {
+    width: 47%;
+    border-width: 4px;
+  }
+
+  .content-title {
+    font-size: 1.7rem;
+  }
+
+  .button-title {
+    font-size: 1.4rem;
+    margin-top: 19px;
+  }
+  
+  .button-container {
+    padding-bottom: 0px;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home-content-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 60px 0 60px;
+    gap: 40px;
+  }
+
+  .card-item {
+    min-height: 240px;
+    width: 47%;
+  }
+
+  .content-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    padding-bottom: 30px;
+  }
+
+  .button-title {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+
   }
 
   .button-container {
@@ -58,80 +133,31 @@
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .home-content-container {
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 40px;
-    gap: 30px;
-  }
-
-  .card-item {
-    width: 45%;
-    border-width: 4px;
-  }
-
-  .content-title {
-    font-size: 2rem;
-  }
-
-  .button-container {
-    padding-bottom: 25px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .home-content-container {
-    justify-content: space-between;
-    padding: 50px;
-  }
-
-  .card-item {
-    width: 40%;
-    border-width: 5px;
-  }
-
-  .content-title {
-    font-size: 2.2rem;
-  }
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .home-content-container {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
-    background-color: #1a1a33;
     padding: 60px 60px 0 60px;
     gap: 50px;
   }
 
   .card-item {
-    min-height: 240px;
-    width: 380px;
+    min-height: 260px;
+    width: 47%;
   }
 
   .content-title {
-    color: white;
     font-size: 2.3rem;
-    font-weight: 600;
     margin-bottom: 20px;
   }
 
   .button-container {
-    display: flex;
-    flex-flow: column nowrap;
     padding-bottom: 30px;
   }
 
   .button-title {
-    color: white;
-    font-weight: 600;
-    margin-bottom: 0px;
-    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
   }
 }

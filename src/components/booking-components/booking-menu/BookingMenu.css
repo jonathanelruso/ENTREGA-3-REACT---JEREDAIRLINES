@@ -1,8 +1,9 @@
 .booking-menu-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image:  url("background-image/booking-menu-image.webp");
+    background-image: url("background-image/booking-menu-image.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,13 +13,34 @@
 
 .booking-options-container {
     display: flex;
+    flex-direction: column; /* Organiza en columna */
     justify-content: center;
     align-items: center;
     width: 90%;
-    border: solid 3px #171a4a;
+    border: 3px solid #171a4a;
     border-radius: 10px;
     background-color: white;
-    height: 200px; 
+    height: 250px; 
     padding: 0 20px;
-    gap: 60px;  
+    gap: 20px;  /* Puedes ajustar el gap según el espacio deseado */
+}
+
+.booking-items-container {
+    display: flex;
+    flex-direction: row; /* Asegura la dirección en fila */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+    background-color: white;
+    height: 200px;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.booking-button-container {
+    justify-content: center;
+    align-self: center;  /* Alinea el botón al final (derecha) del contenedor de columna */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }

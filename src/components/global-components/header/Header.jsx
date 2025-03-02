@@ -3,9 +3,12 @@ import { Button, Offcanvas } from "react-bootstrap";
 import "./Header.css";
 
 function Header({logo_image}) {
+  // Hook para gestionar si el encabezado debe ser fijo al desplazarse
   const [fix, setFix] = useState(false);
+  // Hook para gestionar la visibilidad del menú off-canvas
   const [showMenu, setShowMenu] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  // Hook para gestionar si la vista es móvil
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 992);
 
   useEffect(() => {
     function handleScroll() {
@@ -13,7 +16,7 @@ function Header({logo_image}) {
     }
 
     function handleResize() {
-      const mobile = window.innerWidth <= 768;
+      const mobile = window.innerWidth <= 992;
       setIsMobile(mobile);
       if (!mobile) {
         setShowMenu(false); // Cierra el menú si no es móvil
@@ -43,8 +46,8 @@ function Header({logo_image}) {
           </Button>
         ) : (
           <ul className="nav-list">
-            <li className="nav-item"><a href="/home">Inicio</a></li>
-            <li className="nav-item"><a href="/booking">Reservas</a></li>
+            <li className="nav-item"><a href="/inicio">Inicio</a></li>
+            <li className="nav-item"><a href="/reservas">Reservas</a></li>
             <li className="nav-item"><a href="/destinos">Destinos</a></li>
             <li className="nav-item"><a href="/contacto">Contacto</a></li>
             <li className="nav-item"><a href="/login">Iniciar Sesión</a></li>
@@ -59,8 +62,8 @@ function Header({logo_image}) {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="nav-list-mobile">
-            <li className="nav-item"><a href="/home">Inicio</a></li>
-            <li className="nav-item"><a href="/booking">Reservas</a></li>
+            <li className="nav-item"><a href="/inicio">Inicio</a></li>
+            <li className="nav-item"><a href="/reservas">Reservas</a></li>
             <li className="nav-item"><a href="/destinos">Destinos</a></li>
             <li className="nav-item"><a href="/contacto">Contacto</a></li>
             <li className="nav-item"><a href="/login">Iniciar Sesión</a></li>

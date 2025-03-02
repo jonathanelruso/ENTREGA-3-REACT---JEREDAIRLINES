@@ -7,7 +7,7 @@ function HomeBookingButton() {
   
   return (
     <div className="buttons">
-        <button className="blob-btn" onClick={() => navigate("/booking")}>
+        <button className="blob-btn" onClick={() => navigate("/reservas")}>
           Reservar
           <span className="blob-btn__inner">
             <span className="blob-btn__blobs">

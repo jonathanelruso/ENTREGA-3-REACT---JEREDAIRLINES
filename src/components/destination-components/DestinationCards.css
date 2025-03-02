@@ -1,0 +1,151 @@
+/* Contenedor principal */
+.destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    background-color: #252440;
+}
+
+/* Título principal de la sección */
+.destinations-title {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de las tarjetas */
+.destinations-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Tarjeta individual de destino */
+.destination-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Título dentro de la tarjeta */
+.destination-card-title {
+    font-weight: bold;
+    color: #333;
+
+}
+
+/* Subtítulo dentro de la tarjeta */
+.destination-card-subtitle {
+    color: #777;
+}
+
+/* Estilos responsivos */
+
+/* Extra small devices (phones, 600px and less) - 2 cards per row */
+@media only screen and (max-width: 600px) {
+    .destination-card {
+        width: 40%;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .destinations-title {
+        font-size: 1.3rem;
+    }
+
+    .destination-card-title {
+        font-size: 1rem;
+    }
+    .destination-card-subtitle {
+        font-size: 0.87rem;
+    }
+    .destinations-cards-container {
+        padding: 20px;
+    }
+
+    .destination-card-button {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 600px){
+    .destination-card {
+        width: 44%;
+        margin: 10px;
+    }
+
+    .destinations-title {
+        font-size: 1.4rem;
+    }
+
+    .destination-card-title {
+        font-size: 1.1rem;
+    }
+    .destination-card-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .destination-card-button {
+        font-size: 0.95rem;
+        padding: 0.5rem 0.85rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 768px) {
+    .destination-card {
+        width: 43%;
+        margin: 10px;
+    }
+
+    .destinations-title {
+        font-size: 1.5rem;
+    }
+
+    .destination-card-title {
+        font-size: 1.25rem;
+    }
+    .destination-card-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px to 1200px) */
+@media only screen and (min-width: 992px){
+    .destination-card {
+        width: 43%;
+        margin: 10px;
+    }
+    .destination-card-title {
+        font-size: 1.35rem;
+    }
+    .destination-card-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra large devices (desktops large, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .destination-card {
+        width: 18rem; /* Ancho fijo */
+        margin: 10px;
+    }
+    .destination-card-title {
+        font-size: 1.5rem;
+    }
+    .destination-card-subtitle {
+        font-size: 1.15rem;
+    }
+}

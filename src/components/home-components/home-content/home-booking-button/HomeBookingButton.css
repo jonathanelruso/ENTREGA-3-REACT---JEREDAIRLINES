@@ -1,8 +1,9 @@
+/* General styles */
 .buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 12px;
   text-align: center;
   padding: 0;
   height: 100px;
@@ -12,6 +13,7 @@
 .blob-btn-link {
   text-decoration: none;
 }
+
 .blob-btn {
   z-index: 1;
   position: absolute;
@@ -132,5 +134,160 @@
 @supports (filter: url('#goo')) {
   .blob-btn:hover .blob-btn__blob {
     transform: translateZ(0) scale(1.4);
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .blob-btn {
+    padding: 15px 36px;
+    font-size: 14px;
+  }
+
+  .blob-btn:before {
+    border: 1.5px solid #0505A9;
+  }
+
+  .blob-btn:after {
+    left: 2px;
+    top: 2px;
+  }
+
+  .blob-btn__blob {
+    width: 20%;
+  }
+
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.5);
+  }
+
+  @supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.2);
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .blob-btn {
+    padding: 18px 40px;
+    font-size: 15px;
+  }
+
+  .blob-btn:before {
+    border: 1.8px solid #0505A9;
+  }
+
+  .blob-btn:after {
+    left: 2.5px;
+    top: 2.5px;
+  }
+
+  .blob-btn__blob {
+    width: 22%;
+  }
+
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.6);
+  }
+
+  @supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.3);
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .blob-btn {
+    padding: 20px 46px;
+    font-size: 16px;
+  }
+
+  .blob-btn:before {
+    border: 2px solid #0505A9;
+  }
+
+  .blob-btn:after {
+    left: 3px;
+    top: 3px;
+  }
+
+  .blob-btn__blob {
+    width: 25%;
+  }
+
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.7);
+  }
+
+  @supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.4);
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .blob-btn {
+    padding: 22px 50px;
+    font-size: 17px;
+  }
+
+  .blob-btn:before {
+    border: 2.2px solid #0505A9;
+  }
+
+  .blob-btn:after {
+    left: 3.5px;
+    top: 3.5px;
+  }
+
+  .blob-btn__blob {
+    width: 27%;
+  }
+
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.8);
+  }
+
+  @supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.5);
+    }
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .blob-btn {
+    padding: 24px 54px;
+    font-size: 18px;
+  }
+
+  .blob-btn:before {
+    border: 2.4px solid #0505A9;
+  }
+
+  .blob-btn:after {
+    left: 4px;
+    top: 4px;
+  }
+
+  .blob-btn__blob {
+    width: 30%;
+  }
+
+  .blob-btn:hover .blob-btn__blob {
+    transform: translateZ(0) scale(1.9);
+  }
+
+  @supports (filter: url('#goo')) {
+    .blob-btn:hover .blob-btn__blob {
+      transform: translateZ(0) scale(1.6);
+    }
   }
 }
