@@ -31,4 +31,5 @@ This project is a web application for Jered Airlines, developed using React and 
 
 ## Adicional resources / Acknowledgements
 
-- Sticky Navbar on the scroll: [YouTube Video](https://www.youtube.com/watch?v=HoyHhgMYFj4)
+- Sticky Navbar on scroll: [YouTube Video](https://www.youtube.com/watch?v=HoyHhgMYFj4)
+- Resive Header on scroll: [Youtube Video](https://www.youtube.com/watch?v=EpccULQMKvY&t=267s)
