@@ -4,12 +4,16 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { countries } from '../../../services/countries-service/CountriesService';
 
-function CountrySelect({ label }) {
+function CountrySelect({ label, value, onChange }) {
     return (
         <Autocomplete
             id="country-select-demo"
             sx={{ width: 300 }}
             options={countries}
+            value={value}  // Asignamos el valor recibido como propiedad
+            onChange={(_, newValue) => {
+                onChange(newValue);  // Llamamos a la función onChange para actualizar el estado
+            }}
             autoHighlight
             getOptionLabel={(option) => option.label}
             renderOption={(props, option) => {
