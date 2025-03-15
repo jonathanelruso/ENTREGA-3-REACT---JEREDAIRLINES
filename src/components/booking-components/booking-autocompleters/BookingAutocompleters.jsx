@@ -11,7 +11,7 @@ function CountrySelect({ label, value, onChange }) {
             sx={{ width: 300 }}
             options={countries}
             value={value}  // Asignamos el valor recibido como propiedad
-            onChange={(_, newValue) => {
+            onChange={(event, newValue) => {
                 onChange(newValue);  // Llamamos a la función onChange para actualizar el estado
             }}
             autoHighlight

@@ -1,0 +1,52 @@
+/* Contenedor principal */
+.reservation-list-main-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de reservas */
+.reservation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cada item de reserva */
+.reservation-item {
+  display: flex; /* Permite alinear elementos */
+  justify-content: space-between; /* Separa el texto y el botón */
+  align-items: center; /* Centra verticalmente */
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo del texto */
+.reservation-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  flex: 1; /* Ocupa el máximo espacio disponible */
+}
+
+/* Estilo para el botón de cancelar */
+.reservation-item .cancel-icon {
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.reservation-item .cancel-icon:hover {
+  color: #2823bc;
+}
+
+/* Hover para cada reserva */
+.reservation-item:hover {
+  background-color: #f1f1f1;
+}

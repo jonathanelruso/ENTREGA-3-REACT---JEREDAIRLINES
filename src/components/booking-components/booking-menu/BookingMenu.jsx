@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button } from "@mui/material";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import CountrySelect from "../booking-autocompleters/BookingAutocompleters";
 import BookingCalendar from "../booking-calendar/BookingCalendar";
 import "./BookingMenu.css";
@@ -8,13 +8,16 @@ import dayjs from "dayjs";
 import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import Stack from '@mui/material/Stack';
+import BookingListServices from '../../../services/booking-list-services/BookingListServices';
+
 
 function BookingMenu() {
-  const [origin, setOrigin] = useState(null); // Para almacenar el país de origen
-  const [destination, setDestination] = useState(null); // Para almacenar el país de destino
+  const [origin, setOrigin] = useState(null);
+  const [destination, setDestination] = useState(null);
   const [departureDate, setDepartureDate] = useState(null);
   const [returnDate, setReturnDate] = useState(null);
   const [alert, setAlert] = useState(null);
+  const refForm = useRef();
 
   // Función de reserva
   const handleReserva = () => {
@@ -22,16 +25,38 @@ function BookingMenu() {
       <Stack sx={{ width: '100%' }} spacing={2}>
         <Alert severity="success">
           <AlertTitle>Reserva realizada</AlertTitle>
-          Origen: {origin?.label}
-          <p></p>
-          Destino: {destination?.label}
-          <p></p>
-          Fecha Ida: {departureDate ? departureDate.format("DD/MM/YYYY") : "No seleccionada"}
-          <p></p>
-          Fecha Vuelta: {returnDate ? returnDate.format("DD/MM/YYYY") : "No seleccionada"}
+          <div className='booking-alert-container'>
+            <p>Origen: {origin?.label + ""}</p>
+            <p>Destino: {destination?.label + ""}</p>
+            <p>Fecha Ida: {departureDate ? departureDate.format("DD/MM/YYYY") + "" : "No seleccionada"}</p>
+            <p>Fecha Vuelta: {returnDate ? returnDate.format("DD/MM/YYYY") + "" : "No seleccionada"}</p>
+          </div>
         </Alert>
       </Stack>
     );
+
+    setTimeout(function () {
+      setAlert(null)
+    }, 3000);
+  };
+
+  function addReservationAndHandleReserva() {
+    handleReserva();
+    addReservation();
+  }
+
+  const addReservation = () => {
+    BookingListServices.addReservation(
+      origin.label,
+      destination.label,
+      departureDate.format("DD/MM/YYYY"),
+      returnDate.format("DD/MM/YYYY")
+    ).then((res) => {
+      refForm.current.reset();
+      setReservations(oldValues => [...oldValues, { key: res.key, origin, destination, departureDate, returnDate }]);
+    }).catch(error => {
+      console.error("Error al guardar la reserva en Firebase:", error);
+    });
   };
 
   // Validar si la fecha de vuelta es válida
@@ -56,13 +81,14 @@ function BookingMenu() {
           />
         </div>
         <div className="booking-button-container">
-          <Button variant="contained" onClick={handleReserva} disabled={isDisabled}>
+          <Button variant="contained" onClick={addReservationAndHandleReserva} disabled={isDisabled} ref={refForm}>
             Reservar
           </Button>
         </div>
       </div>
       {alert && <div className="alert-container">{alert}</div>}
     </div>
+
   );
 }
 
