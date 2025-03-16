@@ -2,13 +2,14 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import { countries } from '../../../services/countries-service/CountriesService';
+import { countries } from '../../../../services/countries-service/CountriesService';
+import "../BookingItems.css"
 
 function CountrySelect({ label, value, onChange }) {
     return (
         <Autocomplete
+            className="country-select-item"
             id="country-select-demo"
-            sx={{ width: 300 }}
             options={countries}
             value={value}  // Asignamos el valor recibido como propiedad
             onChange={(event, newValue) => {

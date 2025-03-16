@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Button } from "@mui/material";
-import { useState, useEffect, useRef } from "react";
-import CountrySelect from "../booking-autocompleters/BookingAutocompleters";
-import BookingCalendar from "../booking-calendar/BookingCalendar";
+import { useState, useRef } from "react";
+import CountrySelect from "../booking-items/booking-autocompleters/BookingAutocompleters";
+import BookingCalendar from "../booking-items/booking-calendar/BookingCalendar";
 import "./BookingMenu.css";
 import dayjs from "dayjs";
 import Alert from '@mui/material/Alert';
@@ -70,7 +70,7 @@ function BookingMenu() {
       <div className="booking-options-container">
         <div className="booking-items-container">
           {/* Pasar la función onChange que actualiza el estado */}
-          <CountrySelect label="Origen" value={origin} onChange={setOrigin} />
+          <CountrySelect label="Origen" value={origin} onChange={setOrigin}/>
           <CountrySelect label="Destino" value={destination} onChange={setDestination} />
           <BookingCalendar label="Fecha de ida" value={departureDate} onChange={setDepartureDate} />
           <BookingCalendar
