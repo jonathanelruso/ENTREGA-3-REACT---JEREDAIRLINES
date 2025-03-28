@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>JeredAirlines - Destinos</title>
+        <link>https://entrega-2-react--jeredairlines.web.app/destinos</link>
+        <description>Descubre los destinos más fascinantes con JeredAirlines.</description>
+        <language>es</language>
+
+        <item>
+            <title>Berlín</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-1</link>
+            <description>Una ciudad de arte y cultura.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>París</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-2</link>
+            <description>La ciudad de la luz y el amor.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Roma</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-3</link>
+            <description>El corazón de la antigua civilización.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Tokio</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-4</link>
+            <description>Un crisol de tradición y tecnología.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Londres</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-5</link>
+            <description>La capital británica de la historia.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Lisboa</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-6</link>
+            <description>La capital llena de colores y fado.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Dubrovnik</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-7</link>
+            <description>La perla del Adriático.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Nueva York</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-8</link>
+            <description>La gran manzana, siempre viva.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Praga</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-9</link>
+            <description>La ciudad de los cuentos de hadas.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Buenos Aires</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-10</link>
+            <description>La ciudad del tango y la pasión.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Estambul</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-11</link>
+            <description>Puente entre Europa y Asia.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Bangkok</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-12</link>
+            <description>Templos y mercados flotantes.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Viena</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-13</link>
+            <description>La capital de la música clásica y el arte.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Zúrich</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-15</link>
+            <description>La ciudad suiza de lujo y tranquilidad.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Helsinki</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-16</link>
+            <description>Diseño, naturaleza y cultura finlandesa.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Madrid</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-17</link>
+            <description>Corazón de España, arte y vida nocturna.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Seúl</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-18</link>
+            <description>Tecnología y tradición en armonía.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Los Ángeles</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-19</link>
+            <description>Hollywood, sol y diversión sin fin.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Sídney</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-20</link>
+            <description>Playas infinitas y la famosa ópera.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Ámsterdam</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-21</link>
+            <description>Canales, bicicletas y cultura vibrante.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Barcelona</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-22</link>
+            <description>La ciudad de Gaudí y la brisa mediterránea.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Ciudad de México</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-23</link>
+            <description>Una mezcla de historia y modernidad.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Lima</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-24</link>
+            <description>Cultura prehispánica y gastronomía de clase mundial.</description>
+            <category>Destinos</category>
+        </item>
+
+        <item>
+            <title>Río de Janeiro</title>
+            <link>https://entrega-2-react--jeredairlines.web.app/destinos#card-25</link>
+            <description>El carnaval eterno y las playas doradas.</description>
+            <category>Destinos</category>
+        </item>
+    </channel>
+</rss>

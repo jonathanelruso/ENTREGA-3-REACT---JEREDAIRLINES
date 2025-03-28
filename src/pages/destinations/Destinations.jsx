@@ -3,13 +3,14 @@ import BackgroundImage from "../../components/global-components/background-image
 import Header from "../../components/global-components/header/Header";
 import Footer from "../../components/global-components/footer/Footer";
 
-function Destinations () {
+
+function Destinations() {
     return (
         <>
-        <Header logo_image={"./logo/white-logo.png"}/>
-        <BackgroundImage image= "/background-image/destinations-image.webp" text={"Lugares inolvidables te esperan"}/>
-        <DestinationCards/>
-        <Footer/>
+            <Header logo_image={"./logo/white-logo.png"} />
+            <BackgroundImage image="/background-image/destinations-image.webp" text={"Lugares inolvidables te esperan"} />
+            <DestinationCards />
+            <Footer />
         </>
     )
 }

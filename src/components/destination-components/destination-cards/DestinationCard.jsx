@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 function DestinationCard(props) {
   return (
-    <Card className='destination-card'>
+    <Card className='destination-card' id={`card-${props.index}`}>
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title className='destination-card-title'>{props.title}</Card.Title>
