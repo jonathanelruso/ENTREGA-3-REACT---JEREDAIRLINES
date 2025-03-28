@@ -15,7 +15,7 @@ function DestinationCards() {
                     ))
                 }
                 <div className="rss-container">
-                    <a href="https://entrega-2-react--jeredairlines.web.app/destinos" target="_blank" rel="noopener noreferrer" className="rss-link">
+                    <a href="https://entrega-2-react--jeredairlines.web.app/destinos.xml" target="_blank" className="rss-link">
                         <FontAwesomeIcon icon={faRss} className="rss-icon" />
                         <p className="rss-text">Suscríbete a nuestro RSS para recibir las últimas novedades</p>
                     </a>
