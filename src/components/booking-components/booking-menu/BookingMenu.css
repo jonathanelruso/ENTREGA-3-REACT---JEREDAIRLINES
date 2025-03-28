@@ -1,5 +1,6 @@
 .booking-menu-container {
-    background-image: url("background-image/booking-menu-image.webp");
+    background-image: url("/background-image/booking-menu-image.webp");
+    /* url("background-image/booking-menu-image.webp") */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

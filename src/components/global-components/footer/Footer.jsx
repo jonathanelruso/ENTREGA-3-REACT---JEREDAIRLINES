@@ -90,7 +90,7 @@ function Footer() {
               <ul>
                 <li><a href="#">Programa de fidelidad</a></li>
                 <li><a href="#">Ofertas y promociones</a></li>
-                <li><a href="#">Blog de viajes</a></li>
+                <li><a href="https://entrega-2-react--jeredairlines.web.app/blog-de-viajes">Blog de viajes</a></li>
                 <li><a href="#">Foro de viajeros</a></li>
               </ul>
             </AccordionDetails>
@@ -134,7 +134,7 @@ function Footer() {
             <li className="footer-list-header">Comunidad</li>
             <li><a href="#">Programa de fidelidad</a></li>
             <li><a href="#">Ofertas y promociones</a></li>
-            <li><a href="#">Blog de viajes</a></li>
+            <li><a href="https://entrega-2-react--jeredairlines.web.app/blog-viajes.xml">Blog de viajes</a></li>
             <li><a href="#">Foro de viajeros</a></li>
           </ul>
           <ul>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>JeredAirlines - Blog de Viajes</title>
+        <link>https://www.jeredairlines.com/blog</link>
+        <description>Explora el mundo con JeredAirlines: consejos, destinos y experiencias
+            inolvidables.</description>
+        <language>es</language>
+
+        <item>
+            <title>Descubre los 5 destinos más exóticos para este verano</title>
+            <link>https://www.jeredairlines.com/blog/destinos-exoticos-2025</link>
+            <description>Te llevamos a lugares paradisíacos que debes visitar en 2025. Desde las
+                playas ocultas de Maldivas hasta los templos místicos de Bali. Conoce qué hacer,
+                dónde alojarte y los mejores momentos para viajar.</description>
+            <category>Destinos</category>
+            <pubDate>Fri, 22 Mar 2025 10:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Consejos para volar cómodamente en vuelos largos</title>
+            <link>https://www.jeredairlines.com/blog/consejos-vuelos-largos</link>
+            <description>Desde la elección del asiento hasta los mejores trucos para dormir en el
+                avión, te damos las claves para hacer que tu próximo vuelo transatlántico sea mucho
+                más placentero.</description>
+            <category>Consejos de viaje</category>
+            <pubDate>Wed, 20 Mar 2025 14:30:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Guía completa para viajar a Tokio por primera vez</title>
+            <link>https://www.jeredairlines.com/blog/guia-tokio</link>
+            <description>Descubre qué ver en Tokio, desde el barrio de Shinjuku hasta el histórico
+                Asakusa. Además, consejos sobre transporte, comida típica y lugares imperdibles.</description>
+            <category>Guías de viaje</category>
+            <pubDate>Mon, 18 Mar 2025 08:15:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Cómo aprovechar al máximo las escalas en aeropuertos</title>
+            <link>https://www.jeredairlines.com/blog/escalas-aeropuertos</link>
+            <description>¿Tienes una escala de varias horas? Descubre cómo disfrutar de los
+                aeropuertos más transitados del mundo y convertir tu espera en una experiencia
+                divertida.</description>
+            <category>Consejos de viaje</category>
+            <pubDate>Sat, 16 Mar 2025 16:45:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Las aerolíneas con las mejores comidas a bordo en 2025</title>
+            <link>https://www.jeredairlines.com/blog/mejor-comida-aerolineas</link>
+            <description>Conoce cuáles son las aerolíneas que ofrecen los menús más deliciosos en
+                clase económica y ejecutiva. Desde platos gourmet hasta opciones veganas.</description>
+            <category>Experiencias de vuelo</category>
+            <pubDate>Thu, 14 Mar 2025 12:00:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>¿Cuáles son los aeropuertos más modernos del mundo?</title>
+            <link>https://www.jeredairlines.com/blog/aeropuertos-modernos</link>
+            <description>Exploramos los aeropuertos más tecnológicos y eficientes, con inteligencia
+                artificial, robots asistentes y zonas de entretenimiento de última generación.</description>
+            <category>Infraestructura</category>
+            <pubDate>Tue, 12 Mar 2025 09:30:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Errores comunes al reservar un vuelo y cómo evitarlos</title>
+            <link>https://www.jeredairlines.com/blog/errores-reserva-vuelos</link>
+            <description>Desde elegir el aeropuerto incorrecto hasta no revisar las restricciones de
+                equipaje, te enseñamos cómo evitar estos errores costosos al comprar tu billete de
+                avión.</description>
+            <category>Consejos de viaje</category>
+            <pubDate>Sun, 10 Mar 2025 18:15:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Viajar en primera clase: ¿Vale la pena?</title>
+            <link>https://www.jeredairlines.com/blog/primera-clase</link>
+            <description>Analizamos las ventajas de volar en primera clase, desde la comodidad de
+                los asientos hasta los lujosos servicios exclusivos a bordo.</description>
+            <category>Experiencias de vuelo</category>
+            <pubDate>Fri, 8 Mar 2025 11:45:00 GMT</pubDate>
+        </item>
+
+        <item>
+            <title>Documentos esenciales para viajar al extranjero en 2025</title>
+            <link>https://www.jeredairlines.com/blog/documentos-viaje</link>
+            <description>Asegúrate de llevar contigo todos los documentos necesarios para tu próximo
+                viaje internacional, desde pasaportes hasta visados y certificados de vacunación.</description>
+            <category>Consejos de viaje</category>
+            <pubDate>Wed, 6 Mar 2025 15:20:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
