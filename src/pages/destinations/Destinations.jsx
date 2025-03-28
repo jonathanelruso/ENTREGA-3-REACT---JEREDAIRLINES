@@ -2,9 +2,7 @@ import DestinationCards from "../../components/destination-components/Destinatio
 import BackgroundImage from "../../components/global-components/background-image/BackgroundImage";
 import Header from "../../components/global-components/header/Header";
 import Footer from "../../components/global-components/footer/Footer";
-import { faRss } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Height } from "@mui/icons-material";
+
 
 function Destinations() {
     return (

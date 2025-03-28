@@ -7,7 +7,7 @@
     background-color: #252440;
 }
 
-/* Título principal de la sección */
+/* Título principal*/
 .destinations-title {
     color: white;
     text-align: center;
@@ -49,7 +49,61 @@
     color: #777;
 }
 
-/* Estilos responsivos */
+
+/* Estilo para el contenedor del botón RSS */
+.rss-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffcc00; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.rss-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.rss-icon {
+    font-size: 24px;
+    color: #ffffff; 
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+
+.rss-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; 
+    margin: 0;
+}
+
+/* Efecto hover para el botón RSS */
+.rss-container:hover {
+    background-color: #e6b800; 
+    transform: scale(1.05); 
+}
+
+.rss-container:hover .rss-icon {
+    color: #333333; 
+}
+
+.rss-container:hover .rss-text {
+    color: #333333; 
+}
+
+
 
 /* Extra small devices (phones, 600px and less) - 2 cards per row */
 @media only screen and (max-width: 600px) {
