@@ -63,7 +63,7 @@ function Header({ logo_image, shrinkOnScroll = true }) {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="nav-list-mobile">
-            <li className="nav-item"><a href="/inicio">In0icio</a></li>
+            <li className="nav-item"><a href="/inicio">Inicio</a></li>
             <li className="nav-item"><a href="/reservas">Reservas</a></li>
             <li className="nav-item"><a href="/destinos">Destinos</a></li>
             <li className="nav-item"><a href="/contacto">Contacto</a></li>

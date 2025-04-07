@@ -8,7 +8,7 @@ import BookingList from "../../components/booking-components/booking-menu/bookin
 function Booking() {
     return (
         <>
-            <Header logo_image={"./logo/black-logo.png"}/>
+            <Header logo_image={"./logo/white-logo.png"}/>
             <BackgroundImage image= "/background-image/booking-image.webp" text = "A un solo clic de tu próximo viaje"/>
             <BookingMenu />
             <BookingList/>  

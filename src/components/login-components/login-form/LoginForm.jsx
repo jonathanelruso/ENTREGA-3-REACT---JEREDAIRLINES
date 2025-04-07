@@ -20,7 +20,7 @@ function LoginForm() {
                 setError("");
             })
             .catch((error) => {
-                const errorMessage = error.message;
+                const errorMessage = "Error de autenticación: datos incorrectos";
                 setError(errorMessage);
             });
     };
@@ -29,7 +29,7 @@ function LoginForm() {
         <div className="login-wrapper">
             <div className="login-container">
                 <h3>Iniciar Sesión</h3>
-                {error && <p className="error-message">{error}</p>} {/* Muestra errores si existen */}
+                {error && <p className="error-message" style={{color: 'red'}}> {error}</p>} {/* Muestra errores si existen */}
                 <form onSubmit={handleLogin}>
                     <div className="login-item">
                         <label htmlFor="email">Correo electrónico:</label>
